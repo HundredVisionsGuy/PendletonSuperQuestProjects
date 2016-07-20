@@ -1,0 +1,60 @@
+/* style.css */
+body, h1, h2, h3, h4, p {
+	margin: 0;
+	padding: .5em;
+}
+/* center with max width */
+#wrapper {
+	width: 96%;
+	max-width: 90em;
+	margin: 0 auto;
+}
+
+/* 2 Column Layout:
+	Old-school with float
+#main {
+	float: left;
+	width: 60em;
+}
+#sidebar {
+	margin-left: 61em;
+}
+#page {
+	background-image:
+    linear-gradient(
+      to right, 
+      #fff,
+      #fff 67%,
+      #D7D1F5 67%
+    );
+	padding: 1em 0;
+}
+*/
+/* 2 Column Layout with display: inline-block 
+NEEDS RESEARCH
+#main, #sidebar {
+	display: inline-block;
+}
+
+*/
+/* 2 Column Layout with Flex-box */
+#page {
+	display: flex;
+	flex-direction: row-reverse;
+}
+#main {
+	width: 60em;
+	background-color: #DEF5D1;
+}
+#sidebar {
+	width: 30em;
+	background-color: #D7D1F5;
+}
+
+figure {
+	padding: 1em;
+}
+pre, 
+code {
+	margin: 0;
+}
